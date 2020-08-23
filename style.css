@@ -1,0 +1,419 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.body {
+    font-size: 1.4em;
+    line-height: 2.2em;
+    position: relative;
+    background-color: #fce4db;
+    color: #e61874;
+}
+
+/*デフォルトCSSをリセットする*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+/*投稿フォーム開始*/
+.wrapper{
+    background-image: url(../img/panda.jpg);
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.contact-form{
+    max-width: 550px;
+    margin: 0 auto;
+    background-color:rgba(126, 30, 30,0.8);
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+}
+
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+}
+
+/*入力フォームの枠を伸ばす*/
+.input-fields,
+.msg{
+    width: 42%;
+}
+.input-fields .input,
+.msg textarea{
+    margin: 10px;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #c5ecfd;
+    padding: 10px;
+    color: #c5ecfd;
+    width: 100%;
+}
+
+.msg textarea{
+    height: 212px;
+}
+
+::-webkit-input-placeholder{
+    color: #c5ecfd;
+}
+
+::-moz-input-placeholder{
+    color: #c5ecfd;
+}
+
+::-ms-input-placeholder{
+    color: #c5ecfd;
+}
+
+.btn{
+    background: #39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px){
+    .contact-form{
+        flex-direction: column;
+    }
+    .msg textarea{
+        height: 80px;
+    }
+    .input-fields,
+    .msg{
+        width: 100%;
+    }
+}
+
+/*投稿フォーム終わり*/
+
+
+.header {
+    background-color: aquamarine;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.global-nav a {
+    color: red;
+}
+
+.global-nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0; /* ヘッダーを細くする */
+}
+.global-nav li{
+    margin: 1rem;
+    font-weight: 600;
+}
+.hero {
+    background-image: url(../img/gorira.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    
+}
+.lead {
+    background-color: aquamarine;
+    color: red;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: pink;
+    border:solid rgb(76, 179, 102);
+}
+.main {
+    flex: 5;
+    margin: 1em;
+    border:solid rgb(76, 179, 102);
+}
+.sidebar {
+    flex: 2;
+    margin: 1em;
+    border:solid rgb(76, 179, 102);
+}
+.main img {
+    width: 100%;
+}
+.sidebar img {
+    width: 80%;
+}
+.section {
+    display: flex;
+}
+.images {
+    flex: 2;
+}
+.text{
+    flex: 5;
+    margin: 1em;
+}
+/* プロフィール開始 */
+.contents_inner {
+    display: flex;
+}
+.profile_gori img{
+    width: 255px;
+    flex: 2;
+}
+.text_area {
+    flex: 5;
+}
+/* プロフ画像開始 */
+    /* 基本のスタイル */
+    .profile figure.delighter {
+        transition: all .5s ease-out;
+        transform: translateX(-20%);
+        opacity: 0;
+    }
+    /* スタート時のスタイル */
+    .profile figure.delighter.started {
+        transform: none;
+        opacity: 1;
+    }
+    /* エンド時のスタイル */
+    .profile figure.delighter.started.ended {
+    }
+        /* 「.profile figure」は、プロフィールの中のfigureタグを動かすよって意味 */
+    /* プロフ画像終わり */
+/* プロフ詳細開始 */
+    /* 基本のスタイル */
+    .text_area.delighter {
+        transition: all .5s ease-out;
+        transform: translateX(20%);
+        opacity: 0;
+    }
+    /* スタート時のスタイル */
+    .text_area.delighter.started {
+        transform: none;
+        opacity: 1;
+    }
+    /* エンド時のスタイル */
+    .profile figure.delighter.started.ended {
+    }
+    .profile_gori {
+        display: block;
+        margin-block-start: 2em;
+        margin-block-end: 2em;
+        margin-inline-start: 40px;
+        margin-inline-end: 40px;
+    }
+    .text_area {
+        color: #e61874;
+    }
+    .profile dt {
+        font-size: 1.5rem;
+        line-height: 1;
+        border: 2px solid #e61874;
+        width: 100px;
+        text-align: center;
+        padding: 6px 0;
+        font-weight: bold;
+        margin-bottom: 15px;
+        
+    }
+    .profile dd h1 {
+        font-size: 2.4rem;
+    }
+    .profile dd h1 span {
+        font-size: 1.3rem;
+        padding-left: 10px;
+    }
+    .profile p {
+        line-height: 2.8rem;
+        margin-top: 10px;
+    }
+    
+/* プロフ詳細終わり */
+/* プロフィール終わり */
+
+
+/* 愛は時代を開始 */
+    /* foo1開始 */
+        /* 基本のスタイル */
+        .foo1.delighter {
+            transform: translateY(60%);
+            transition:all .5s ease-out;
+        }
+        /* スタート時のスタイル */
+        .foo1.delighter.started {
+            transform: none;
+            opacity: 1;
+        }
+        /* エンド時のスタイル */
+        .foo1.delighter.started.ended {
+        }
+    /* foo1終わり */
+    /* foo2開始 */
+        /* 基本のスタイル */
+        .foo2.delighter {
+            transition: all .7s ease-out;
+            transform: translateY(20%);
+            opacity: 0;
+        }
+        /* スタート時のスタイル */
+        .foo2.delighter.started {
+            transform: none;
+            opacity: 1;
+        }
+        /* エンド時のスタイル */
+        .foo2.delighter.started.ended {
+        }
+    /* foo2終わり */
+    
+
+.content_ai {
+    max-width: 1140px;
+    background-color: aqua;
+    display: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-left:  center;
+    padding-right:  center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.content_ai h1 {
+    text-align: center;
+    color: rgb(230,25,116);
+    margin-top: 0em;
+}
+.content_ai p {
+    text-align: center;
+    color: rgb(230,25,116);
+}
+.gokan p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+/* 愛は時代を開始 */
+/* jQuery開始 */
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+/* jQuery終了 */
+
+.footer{
+    max-width: 1140px;
+    background-color: gray;
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0;
+}
+.footer {
+    display: flex;
+    margin: 0 auto;
+    border:solid rgb(76, 179, 102);
+}
+.dogoart_logo {
+    flex: 1;
+    margin: 3em;
+    border:solid rgb(76, 179, 102);
+}
+
+.footer_text {
+    flex: 5;
+    display: column;
+    border:solid rgb(76, 179, 102);
+}
+.footer_text p {
+    font-size: 0.8em;
+    border:solid rgb(76, 179, 102);
+}
+.footer_text h1 {
+    font-size: 0.9em;
+    border:solid rgb(76, 179, 102);
+}
+.footer_text_botom {
+    display: flex;
+    justify-content: space-around;
+    border:solid rgb(76, 179, 102);
+}
+
+
+.copy_right {
+    background-color: gray;
+    max-width: 1140px;
+    padding: 0;
+    margin: 0 auto;
+}
+.copy_right p {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    border:solid rgb(76, 179, 102);
+}
+
+/*ページトップボタン*/
+.page-top {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 99;
+}
+.page-top img {
+	width: 65px;
+	height: 65px;
+}
+
+@media(max-width: 768px){
+    .navbar {
+        flex-direction: column;
+    }
+    ul {
+        flex-wrap: wrap;
+    }
+    .navbar img {
+        margin: 1rem auto;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .section {
+        flex-direction: column;
+    }
+    .desc {
+        padding: 0;
+    }
+    .content, image {
+        margin-right: 0;
+    }
+}
