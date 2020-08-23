@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>zoolopa2</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <!-- delightersのソース -->
+  <script type="text/javascript" src="js/delighters.js"></script>
+  <!-- jQueryのソース -->
+  <script src="js/jquery.min.js"></script>
+  <!-- スクロールボタン -->
+  <script src="js/my_script.js"></script>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo.png" alt="ZOOLOPA2">
+            </div>
+                <div class="global-nav">
+                    <ul>
+                        <li><a href="#">動物</a></li>
+                        <li><a href="#">zoolopaとは</a></li>
+                        <li><a href="#">イベント</a></li>
+                        <li><a href="#">よくある質問</a></li>
+                        <li><a href="#">お問い合わせ</a></li>
+                    </ul>
+                </div>
+        </div>
+    </header>
+<!--ボタン開始-->
+    <button id="btn">ボタン</button>
+    <script>
+        var btn = document.getElementById('btn');
+        btn.addEventListener("mouseover", function(){
+            alert("hi")
+        })
+   </script>
+<!--ボタン終了-->
+<!--ボタンで名前の入力開始-->
+<h1>名前を記入してください。</h1>
+<input type="text" id="name">
+<button id="btn2">入力完了</button>
+
+<script>
+    var btn2 = document.getElementById('btn2');
+    btn2.addEventListener('click', function(){
+        var name = document.getElementById("name").value;
+        document.getElementById("disply_name").innerHTML = name;
+    })
+</script>
+<!--ボタンで名前の入力終了-->
+<!--メイン画像-->
+    <div class="hero">
+        <div class="lead">
+            <h1>俺に会いに来いよ</h1>
+            <p>待ってるからさ</p>
+        </div>
+    </div>
+<!--メイン画像終了-->
+
+    <div class="content">
+        <main class="main">
+            <h1>注目の動物</h1>
+            <article class="section">
+                    <div class="images">
+                        <img src="img/panda.jpg" alt="パンダの画像">
+                    </div>
+                    <div class="text">
+                        <h2>パンダ</h2>
+                        <p>パンダはマジでかわいいよね。</p>
+                    </div>
+            </article>
+            <article class="section">
+                    <div class="images">
+                        <img src="img/zou.jpeg" alt="象の画像">
+                    </div>
+                    <div class="text">
+                        <h2>象</h2>
+                        <p>象はマジで大きいよね。</p>
+                    </div>
+            </article>
+            <article class="section">
+                    <div class="images">
+                        <img src="img/raion.jpeg" alt="ライオンの画像">
+                    </div>
+                    <div class="text">
+                        <h2>ライオン</h2>
+                        <p>ライオンはマジで凶暴よね。</p>
+                    </div>
+            </article>
+        </main>
+        
+        <aside class="sidebar">
+            <div class="pengin">
+                <h1>秋のペンギン祭り</h1>
+                <p>ペンギンと地獄の果てまで戯れよう！</p>
+                <img src="img/pengin.jpeg" alt="ペンギンの画像">
+            </div>
+            <div class="fes">
+                <h1>秋の大運動会</h1>
+                <p>夜はクラブで大暴れしよう！</p>
+                <img src="img/club.jpg" alt="クラブの画像">
+                
+            </div>
+         </aside>
+    </div>
+    <!-- プロフィール開始 -->
+    <section class="profile">
+        <div class="contents_inner">
+            <figure class="profile_gori" data-delighter>
+                <img src="img/gorira.jpeg" alt="白濱イズミ">
+            </figure>
+            <div class="text_area" data-delighter>
+                <dl>
+                    <dt>Profile</dt>
+                    <dd><h1>白濱イズミ<span>Izumi Shiraharama</span></h1></dd>
+                </dl>
+                <p>ラブリとして雑誌、TV、ラジオ、広告などメディアで活動する一方で近年では自身の内側から生まれる" 言葉 " を日本名である白濱イズミとして詩や朗読、執筆、音楽、など形に捉われずに様々な展示方法を使いながら言葉の活動している。青山spiralにて詩作品を初発表。2018年初個展「言葉の記憶 展」（360°gallery）2019年2度目となる個展「デジタルと私との関係、私はどうやら数字らしい 展」現在ではFigaro webにて詩の短編集「おとこのて」を連載中。KILIGというファンクラブの企画運営を行っており"私達の社会"をテーマに新しい形を目指している。</p>
+            </div>
+        </div>
+    </section>
+    <!-- プロフィール終わり -->
+    <!-- 愛は時代を開始 -->
+    <article>
+    <section class="content_ai" data-delighter>
+            <br>
+            <h1 class="foo1" data-delighter>
+                愛は時代を超えて存在するもの。
+            </h1>
+            <p class="foo2" data-delighter>
+                "    昔を生きた文豪や、"
+                <br>
+                "道後で今を生きる人の「ラブレター」をテーマに、"
+                <br>
+                "愛のメッセージを展示します。"
+            </p>
+        </div>
+            <p class="foo2" data-delighter>
+                “目で耳で触って読む”をキーワードに"
+                <br>
+                五感を使って感じられる「ラブレター」の世界を紡ぎます。
+            </p>
+        </div>
+    </section>
+    </article>
+    <!-- 愛は時代を終わり->
+
+    <!--投稿フォーム-->
+        <div class="wrapper">
+            <div class="contact-form">
+                <div class="input-fields">
+                    <input type="text" class="input" placeholder="Name">
+                    <input type="text" class="input" placeholder="Email Address">
+                    <input type="text" class="input" placeholder="Phone">
+                    <input type="text" class="input" placeholder="Subject">
+                </div>
+                <div class="msg">
+                    <textarea placeholder="Message"></textarea>
+                    <div class="btn">Send</div>
+                </div>
+            </div>
+        </div>
+    <!--投稿フォーム終わり-->
+
+    <!-- jQuery開始 -->
+    <div>
+       <button id="fadeOut">fadeOut</button>
+       <div class="box">box</div>
+    </div>
+    <script src="js/jquery.min.js">
+        $('#fadeOut').on('click', function () {
+            $('.box').fadeOut();
+        })
+    </script>
+    <!-- jQuery終わり -->
+    <!-- フッター開始 -->
+    <footer class="footer">
+        <div class="dogoart_logo">
+                <img src="img/dogoart_logo.svg" alt="道後アートロゴ">
+        </div>
+        <div class="footer_text">
+                    <h1 class="footer_text_top">日比野克彦×道後温泉 道後アート2019・2020
+                        <br>
+                        「ひみつジャナイ基地プロジェクト」
+                    </h1>
+                
+                <div class="footer_text_botom">
+                    <div class="footer_text_left">
+                        <h1>
+                            ■道後アート実行委員会事務局
+                        </h1>
+                        <p>愛媛県松山市道後湯之町5-6
+                            <br>
+                            (松山市産業経済部 道後温泉事務所内)
+                            <br>
+                            TEL：089-921-6464　FAX：089-934-3415
+                        </p>
+                    </div>
+                    <div class="footer_text_right">
+                        <h1>
+                            ■道後アート実行委員会事務局
+                        </h1>
+                        <p>
+                            愛媛県松山市道後湯之町6-8
+                            <br>
+                            （道後温泉旅館協同組合 道後観光案内所内）
+                            <br>
+                            TEL：089-907-5930（8:30〜19:00）　MAIL：kumiai@dogo.or.jp
+                        </p>
+                    </div>
+                </div>
+        </div>
+    </footer>
+    <!-- フッター終わり -->
+    
+    <!-- コピーライト開始 -->
+    <div class="copy_right">
+        <p >© 2019 dogo-art All Rights Reserved.</p>
+        <br>
+    </div>
+    <!-- コピーライト終わり -->
+    <!--　pagetopボタン　-->
+	　<div class="page-top">
+		<img src="img/page_top.gif" alt="ページトップボタン">
+	</div>
+</body>
+</html>
